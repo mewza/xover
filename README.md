@@ -43,19 +43,13 @@ double8 outLR = 0.0_v;
 cross.process_T( *in++ );
 
 for (int i=0; i <= bands; i++)
-
 {
-
-      double8 LR = cross.get_output(i);
-      
+    double8 LR = cross.get_output(i);
       
       // .. do some  fancy dsp processing here to LR ...
-      
-      
-      outLR += LR;
-      
+    
+   outLR += LR;     
 }
-
 
 // write into output buffer
 
