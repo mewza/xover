@@ -32,17 +32,27 @@ your sample iteration loop would look like this:
 
 < BIG SAMPLE LOOP BEGIN >
 
-double8 *in, *out; // make sure to set those up
-double8 outLR = 0.0_v; // nifty isn't it? :-)
+// make sure to set those up of course
+double8 *in, *out; 
+
+// C++ is nifty isn't it?
+double8 outLR = 0.0_v; 
+
+// read from input buffer and split into 4 samples
+// accessible via get_output()
 
 cross.process_T( *in++ );
 
 for (int i=0; i <= bands; i++)
 {
-     double8 LR = cross.get_output(i);
-     // .. do some additional fancy dsp processing here to LR ...
+      double8 LR = cross.get_output(i);
+
+      // .. do some  fancy dsp processing here to LR ...
+
      outLR += LR;
 }
+
+// write into output buffer
 *out++ = outLR;
 
 < BIG SAMPLE LOOP END >
