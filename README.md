@@ -56,11 +56,11 @@ your sample iteration loop would look like this:
 
 < BIG SAMPLE LOOP END >
 
-that's it!  Enjoy the FUN!!!
+that's it!
+
 ~ DemoSense ~
 
 P.S. Never code just for money only. Code becaue you enjoy it!  
-Money will (should) come after you find doing what you love...
-
-
+Money will (should) come after you find doing what you love... and
+most important- don't let the gnomes get you!
 
