@@ -10,19 +10,23 @@ So, how to use it:
 declare:
 
 static const int bands = 3;
+
 xoverT<double8,44100> cross;
 
 constructor:
+
 cross.Init( bands );
  
 in the further init or reset:
 
 // setup the bands 0-85, 85-700, 700-3000, 3000-44khz
+
 cross.set_freq( 0, 85 );
 cross.set_freq( 1, 700 );
 cross.set_freq( 2, 3000 );
 
 // make sure to call this or bad things will happen (or not...)
+
 cross.reset(); 
 
 your sample iteration loop would look like this:
