@@ -37,6 +37,7 @@ double8 *in, *out; // make sure to set those up
 double8 outLR = 0.0_v; // nifty isn't it? :-)
 
 cross.process_T( *in++ );
+
 for (int i=0; i <= bands; i++)
 {
      double8 LR = cross.get_output(i);
