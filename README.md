@@ -26,9 +26,9 @@ cross.set_freq( 2, 3000 );
 
 // make sure to call this or bad things will happen (or not...)
 
-cross.reset(); 
+cross.reset();
 
-your sample iteration loop would look like this:
+// your sample iteration loop would look like this:
 
 < BIG SAMPLE LOOP BEGIN >
 
@@ -36,20 +36,16 @@ your sample iteration loop would look like this:
 double8 *in, *out; 
 
 // C++ is nifty isn't it?
-double8 outLR = 0.0_v; 
+double8 outLR = 0.0_v;
 
-// read from input buffer and split into 4 samples
-// accessible via get_output()
+// read from input buffer and split into 4 samples accessible via get_output()
 
 cross.process_T( *in++ );
-
 for (int i=0; i <= bands; i++)
 {
       double8 LR = cross.get_output(i);
-
       // .. do some  fancy dsp processing here to LR ...
-
-     outLR += LR;
+      outLR += LR;
 }
 
 // write into output buffer
@@ -58,5 +54,10 @@ for (int i=0; i <= bands; i++)
 < BIG SAMPLE LOOP END >
 
 that's it!  Enjoy the FUN!!!
-
 ~ DemoSense ~
+
+P.S. Never code just for money sakes only. Code becaue you enjoy it!  
+Money will (should) come after you find doing what you love...
+
+
+
