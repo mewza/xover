@@ -7,60 +7,59 @@ This is a much more sophisticated method than utilizing nested LP/HP filters.
 So, how to use it:
 
 declare:
-
-static const int bands = 3;
-
-xoverT<double8,44100> cross;
+    
+    static const int bands = 3;
+    xoverT<double8,44100> cross;
 
 constructor:
 
-cross.Init( bands );
+    cross.Init( bands );
  
 in the further init or reset:
 
-// setup the bands 0-85, 85-700, 700-3000, 3000-44khz
+    // setup the bands 0-85, 85-700, 700-3000, 3000-44khz
 
-cross.set_freq( 0, 85 );
-cross.set_freq( 1, 700 );
-cross.set_freq( 2, 3000 );
+    cross.set_freq( 0, 85 );
+    cross.set_freq( 1, 700 );
+    cross.set_freq( 2, 3000 );
 
-// make sure to call this or bad things will happen (or not...)
+make sure to call this or bad things will happen (or not...)
 
-cross.reset();
+    cross.reset();
 
-// your sample iteration loop would look like this:
+your sample iteration loop would look like this:
 
 < BIG SAMPLE LOOP BEGIN >
 
-// make sure to set those up of course
-double8 *in, *out; 
+    // make sure to set those up of course
+    double8 *in, *out; 
 
-// C++ is nifty isn't it?
-double8 outLR = 0.0_v;
+    // C++ is nifty isn't it?
+    double8 outLR = 0.0_v;
 
-// read from input buffer and split into 4 samples accessible via get_output()
+    // read from input buffer and split into 4 samples accessible via get_output()
 
-cross.process_T( *in++ );
+    cross.process_T( *in++ );
 
-for (int i=0; i <= bands; i++)
-{
-    double8 LR = cross.get_output(i);
-      
-      // .. do some  fancy dsp processing here to LR ...
+    for (int i=0; i <= bands; i++)
+    {
+        double8 LR = cross.get_output(i);
+
+        // .. do some  fancy dsp processing here to LR ...
     
-   outLR += LR;     
-}
+        outLR += LR;     
+    }
 
-// write into output buffer
+    // write into output buffer
 
-*out++ = outLR;
+    *out++ = outLR;
 
 < BIG SAMPLE LOOP END >
 
 that's it!  Enjoy the FUN!!!
 ~ DemoSense ~
 
-P.S. Never code just for money sakes only. Code becaue you enjoy it!  
+P.S. Never code just for money only. Code becaue you enjoy it!  
 Money will (should) come after you find doing what you love...
 
 
