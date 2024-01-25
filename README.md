@@ -23,7 +23,7 @@ in the further init or reset:
     cross.set_freq( 1, 700 );
     cross.set_freq( 2, 3000 );
 
-make sure to call this or bad things will happen (or not...)
+make sure to call this after Init() or bad things will happen (or not...)
 
     cross.reset();
 
