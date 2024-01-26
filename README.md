@@ -60,7 +60,7 @@ that's it!
 
 ~ DemoSense ~
 
-P.S. Never code just for money only. Code becaue you enjoy it!  
+P.S. Never code just for money only. Code because you enjoy it!  
 Money will (should) come after you find doing what you love... and
 most important- watch out for the evil gnomes, they are out there to get you!
 You probably already know who THEY are, after the last round of pandemics =)
