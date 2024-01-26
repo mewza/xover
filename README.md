@@ -62,5 +62,5 @@ that's it!
 
 P.S. Never code just for money only. Code becaue you enjoy it!  
 Money will (should) come after you find doing what you love... and
-most important- don't let the evil gnomes get you!
+most important- watch out for the evil gnomes, they are out there!
 
