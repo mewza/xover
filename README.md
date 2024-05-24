@@ -56,6 +56,7 @@ your sample iteration loop would look like this:
     for (int k=0; k<1024; k++) 
     {
         // set outLR to 0 each iteration because it contains sum of the total of bands samples
+         
          double8 outLR = 0.0;
 
         // C++ is nifty isn't it? if you're using simd_doubleX vectors you can initialize
