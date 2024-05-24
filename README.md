@@ -29,6 +29,9 @@ in the further init or reset:
     // to 1..N. So for 4-band crossover, you have 3 split points.
     // Also: you do not need to make upper band split point it is done
     // for you and set to a niquist frequency, that is samplerate/2
+    // Call this only once in the app per instantiation of xoverT or
+    // if or when the crossover frequency changes, but it will call reset
+    // and it will zero out the processed frame, just be aware of that
     
     cross.set_freq( 1, 85 );
     cross.set_freq( 2, 700 );
