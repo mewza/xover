@@ -16,6 +16,9 @@ declare:
     #include <simd/simd.h>
     
     // 4 = number of bands (got moved from Init into template parameter
+    // There is no longer need to call Init, and has been simply removed into
+    // the constructor, and the N of bands is now a template parameter for easy use
+    
     xoverT<double8,4,44100> cross;
 
 in the further init or reset:
