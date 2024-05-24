@@ -19,7 +19,7 @@ declare:
     // There is no longer need to call Init, and has been simply removed into
     // the constructor, and the N of bands is now a template parameter for easy use
     
-    xoverT<double8,4,44100> cross;
+    xoverT<double8,44100,4> cross;
 
 in the further init or reset:
 
