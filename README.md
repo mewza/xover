@@ -43,10 +43,12 @@ your sample iteration loop would look like this:
 
 < BIG SAMPLE LOOP BEGIN >
 
-    // make sure to set those up of course
+    // make sure to set those up with PCM data of course (in this case would be -1..1 perhaps,
+    // although vertically it doesn't matter it could be -32768.0 to 32767.0. Horizontally you have
+    // 44kHz as specified as a template parameter 44100. In oversample mode, you don't need to 
+    // multiply frequency in the set_freq() by oversample factor, only the sampling rate.
+    
     double8 in[1024], out[1024]; 
-
-   
 
     for (int k=0; k<1024; k++) 
     {
