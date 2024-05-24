@@ -44,8 +44,6 @@ in the further init or reset:
 
 your sample iteration loop would look like this:
 
-< BIG SAMPLE LOOP BEGIN >
-
     // make sure to set those up with PCM data of course (in this case would be -1..1 perhaps,
     // although vertically it doesn't matter it could be -32768.0 to 32767.0. Horizontally you have
     // 44kHz as specified as a template parameter 44100. In oversample mode, you don't need to 
@@ -77,8 +75,6 @@ your sample iteration loop would look like this:
         // write into output buffer
         out[k] = outLR;
     }
-    
-< BIG SAMPLE LOOP END >
 
 that's it!
 
