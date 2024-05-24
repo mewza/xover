@@ -26,8 +26,9 @@ in the further init or reset:
     // setup the bands 1-85, 85-700, 700-3k, 3k-22kHz
     
     // NOTE: indexing into bands has been changed from 0..N-1 
-    // to 1..N corresponding to actual bands not split points 
-    // which are N-1 of them (3 in this case for 4-band crossover)
+    // to 1..N. So for 4-band crossover, you have 3 split points.
+    // Also: you do not need to make upper band split point it is done
+    // for you and set to a niquist frequency, that is samplerate/2
     
     cross.set_freq( 1, 85 );
     cross.set_freq( 2, 700 );
