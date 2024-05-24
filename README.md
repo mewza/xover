@@ -1,5 +1,6 @@
 As the description says, the xoverT is a simple dsp code that implements 
-very accurate and fast multiband (up to 4 bands) crossover utilizing templates
+very accurate and fast multiband (up to 4 bands in this example but could
+be extended to any number of bands) crossover utilizing C++ templates
 and therefore, CLANG's native dynamic intrinsict vector construct.
 
 This is a much more sophisticated method than utilizing nested LP/HP filters.
