@@ -2,8 +2,7 @@
 //  xover.h
 //  Fancy Crossover for any type of intrinsic vector (double8, double4, double2, etc..)
 //
-//  Created by DemoSense on 1/25/24.
-//  Copyright © 2024 DSP VooDoo, Inc. All rights reserved.
+//  Copyright (C)2024 DEMOS
 //
 
 #pragma once
