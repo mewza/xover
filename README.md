@@ -5,8 +5,8 @@ Because it is templated C++ class it supports SIMD intrinsict vector construct.
 For information on SVF (state variable filters) go to this site:
 http://www.cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf
 
-This is a much more sophisticated and better sounding method than the 
-nested LP/HP filters. So, and now how to use it:
+This is a sophisticated and better sounding algorithm than the 
+common nested LP/HP filters... and now how to use it:
 
     // for iOS and OS X include simd for simd_double8, ..4, ..2 vectors
     // already defined and many math functions provided via simd::sinf(some_simd_vector)
