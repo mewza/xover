@@ -79,9 +79,8 @@ your sample iteration loop would look like this:
 
 that's it!
 
-P.S. Never code just for money only. Code because you enjoy it!  
-Money will (should) come after you find doing what you love... and
-lets not forget - watch out for the evil gnomes, they are out there to get you!
-(especially if you're born on the territory of Russia or the former USSR)
+Dmitry Boldyrev <subband@protonmail.com>
 
-You probably already know who THEY are, after the last round of pandemics ;-)
+(Real inventor and developer of WinAmp unlike fake Justin Frankel who stole it from me 
+and lied to you all that he was behind it . CIA suppressed credentials for me for 10+ years
+destroyed my reputation, just because I was born in USSR. This is the real truth!)
